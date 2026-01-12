@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Views all Employee</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+  <body>
+     <div class="container">
+     <h1>All Employee Details </h1>
+     <hr>
+     <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Sr.no</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Salary</th>
+      <th scope="col">Bonus</th>
+      <th scope="col">Phone Number</th>
+      <th scope="col">Role</th>
+      <th scope="col">Department</th>
+       <th scope="col">Hire date</th>
+    </tr>
+  </thead>
+    {% for emp in emps %}
+
+  <tbody>
+    <tr>
+      <th>{{emp.id}}</th>
+      <td>{{emp.first_name}}</td>
+      <td>{{emp.last_name}}</td>
+      <td>{{emp.salary}}</td>
+      <td>{{emp.bonus}}</td>
+      <td>{{emp.phone}}</td>
+      <td>{{emp.role}}</td>
+      <td>{{emp.dept}}</td>
+      <td>{{emp.hire_date}}</td>
+
+    </tr>
+  </tbody>
+  {% endfor %}
+</table>
+</div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</html>
